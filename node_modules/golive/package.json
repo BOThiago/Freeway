@@ -1,0 +1,25 @@
+{
+  "name": "golive",
+  "version": "1.0.0",
+  "description": "A video conferencing/classroom using RTCMultiConnection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regarmanojkumar/golive.git"
+  },
+  "keywords": [
+    "RTCMultiConnection",
+    "Video",
+    "Conference",
+    "Classroom"
+  ],
+  "author": "Manoj Kumar Regar <regarmanojkumar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/regarmanojkumar/golive/issues"
+  },
+  "homepage": "https://github.com/regarmanojkumar/golive#readme"
+}
