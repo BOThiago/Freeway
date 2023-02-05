@@ -1,8 +1,10 @@
 //ator
 let yAtor = 366;
+let xAtor = 100;
+let colisao = false;
 
 function mostraAtor() {
-    image(imagemDoAtor, 100, yAtor, 30, 30);
+    image(imagemDoAtor, xAtor, yAtor, 30, 30);
   }
 
 function movimentaAtor() {
@@ -13,3 +15,17 @@ function movimentaAtor() {
       yAtor += 3;
     }
   }
+
+function verificaColisao(){
+  //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
+  for (let i = 0; i < imagemCarros.length; i = i + 1){
+    colisao = collideRectCircle(xCarros[1], yCarros[1], comprimetoCarro, alturaCarro, xAtor, yAtor, 15)
+    if (colisao){
+      colidiu();
+    }
+  }
+}
+
+function colidiu(){
+  yAtor = 366;
+}
