@@ -16,16 +16,16 @@ function movimentaAtor() {
     }
   }
 
-function verificaColisao(){
-  //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
-  for (let i = 0; i < imagemCarros.length; i = i + 1){
-    colisao = collideRectCircle(xCarros[1], yCarros[1], comprimetoCarro, alturaCarro, xAtor, yAtor, 15)
-    if (colisao){
-      colidiu();
+  function verificaColisao(){
+    //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
+    for (let i = 0; i < imagemCarros.length; i++){
+      colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 15)
+      if (colisao){
+        colidiu();
+      }
     }
   }
-}
-
-function colidiu(){
-  yAtor = 366;
-}
+  
+  function colidiu(){
+    yAtor = 366;
+  }
